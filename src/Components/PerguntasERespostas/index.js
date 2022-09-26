@@ -1,9 +1,13 @@
 import './PerguntasERespostas.css';
+import {ReactComponent as IconArrow} from '../../images/icon-arrow-down.svg';
 
 const PerguntasERespostas = ({pergunta, resposta}) => {
     return(
         <div className='perguntas-respostas'>
-            <p className='perguntas'>{pergunta}</p>
+            <div className='pergunta-imagem'>
+                <p className='perguntas'>{pergunta}</p>
+                <IconArrow />
+            </div>
             <p className='resposta'>{resposta}</p>
         </div>
     )
