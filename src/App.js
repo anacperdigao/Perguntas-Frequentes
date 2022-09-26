@@ -5,10 +5,12 @@ import {ReactComponent as WomanOnline} from './images/illustration-woman-online-
 function App() {
   return (
     <div className="App">
-      <div className='container__imagens'>
-        <WomanOnline />
+      <div className='container__geral'>
+        <div className='container__imagens'>
+          <WomanOnline />
+        </div>
+        <ContainerPerguntas />
       </div>
-      <ContainerPerguntas />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const PerguntasERespostas = ({pergunta, resposta}) => {
                 <p className='perguntas'>{pergunta}</p>
                 <IconArrow />
             </div>
-            <p className='resposta'>{resposta}</p>
+            <p className='respostas'>{resposta}</p>
         </div>
     )
 }

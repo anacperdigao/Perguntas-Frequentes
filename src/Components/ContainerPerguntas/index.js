@@ -7,7 +7,7 @@ const ContainerPerguntas = () => {
             <h1>Perguntas Frequentes</h1>
             <PerguntasERespostas
             pergunta = 'Quantos membros da equipe eu posso convidar?'
-            resposta = 'São permitidos 10 membros por equipe.'
+            //resposta = 'São permitidos 10 membros por equipe.'
             />
             
             <PerguntasERespostas
@@ -17,17 +17,17 @@ const ContainerPerguntas = () => {
 
             <PerguntasERespostas
             pergunta = 'Como eu troco de senha?'
-            resposta = 'Siga o caminho a seguir: "perfil - configurações - trocar senha".'
+            //resposta = 'Siga o caminho a seguir: "perfil - configurações - trocar senha".'
             />
 
             <PerguntasERespostas
             pergunta = 'Como cancelar a inscrição?'
-            resposta = 'Siga o caminho a seguir: "perfil - configurações - cancelar inscrição".'
+            //resposta = 'Siga o caminho a seguir: "perfil - configurações - cancelar inscrição".'
             />
 
             <PerguntasERespostas
             pergunta = 'Vocês fornecem suporte adicional?'
-            resposta = 'Oferecemos, porém é um serviço cobrado a parte. Na seção "planos" você pode achar mais informações.'
+            //resposta = 'Oferecemos, porém é um serviço cobrado a parte. Na seção "planos" você pode achar mais informações.'
             />
 
         </div>

@@ -1,3 +1,9 @@
 .container__perguntas h1{
     font-size: 24px;
+    color: hsl(238, 29%, 16%);
+    margin-bottom: 40px;
+}
+
+.container__perguntas{
+    padding: 0px 60px;
 }
