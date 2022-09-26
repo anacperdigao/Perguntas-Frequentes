@@ -1,7 +1,14 @@
 .App {
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+  gap: 50px;
   height: 100vh;
   width: 100vw;
+  padding: 100px 200px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
+
 

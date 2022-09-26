@@ -1,10 +1,10 @@
 import './PerguntasERespostas.css';
 
-const PerguntasERespostas = () => {
+const PerguntasERespostas = ({pergunta, resposta}) => {
     return(
         <div className='perguntas-respostas'>
-            <p className='perguntas'>Pergunta</p>
-            <p className='resposta'>Resposta</p>
+            <p className='perguntas'>{pergunta}</p>
+            <p className='resposta'>{resposta}</p>
         </div>
     )
 }
