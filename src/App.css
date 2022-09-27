@@ -1,12 +1,4 @@
 .App {
-  height: 100vh;
-  width: 100vw;
-  padding: 100px 200px;
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-}
-
-.container__geral{
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
@@ -16,4 +8,6 @@
   background-color: white;
   border-radius: 20px;
 }
+
+
 

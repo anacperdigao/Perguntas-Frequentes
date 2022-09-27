@@ -8,6 +8,10 @@
     color: hsl(14, 88%, 65%);
 }
 
+.clicked{
+    font-weight: 600;
+}
+
 .pergunta-imagem{
     display: flex;
     flex-direction: row;
@@ -28,4 +32,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.icone{
+    color: var(--soft-red);
 }

@@ -13,10 +13,19 @@
 --light-grayish-blue: hsl(240, 5%, 91%);
 }
 
+*{
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
 body {
   margin: 0;
   font-family: 'Kumbh Sans' ,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  padding: 100px 200px;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 

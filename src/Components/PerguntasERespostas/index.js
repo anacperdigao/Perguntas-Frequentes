@@ -10,8 +10,8 @@ const PerguntasERespostas = ({pergunta, resposta}) => {
     return(
         <div className='perguntas-respostas'>
             <div onClick={() => setAbreResposta(!abreResposta)} className='pergunta-imagem'>
-                <p className='perguntas'>{pergunta}</p>
-                {abreResposta ? <FaChevronUp/> : <FaChevronDown />}
+                <p className={`${abreResposta ? "clicked perguntas" : "perguntas"}`}>{pergunta}</p>
+                {abreResposta ? <FaChevronUp className='icone' /> : <FaChevronDown className='icone' />}
             </div>
             
             {abreResposta && <p className='respostas'>{resposta}</p>} 
