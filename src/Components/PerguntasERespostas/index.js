@@ -5,7 +5,6 @@ import { useState } from 'react';
 const PerguntasERespostas = ({pergunta, resposta}) => {
     
     const [abreResposta, setAbreResposta] = useState(false)
-    
 
     return(
         <div className='perguntas-respostas'>

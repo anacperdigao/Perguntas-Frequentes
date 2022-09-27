@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
         <div className='container__imagens'>
-          <WomanOnline />
+          <WomanOnline className='imagem-principal' />
         </div>
         <ContainerPerguntas />
     </div>
