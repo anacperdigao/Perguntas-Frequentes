@@ -1,20 +1,20 @@
 import './PerguntasERespostas.css';
-import {ReactComponent as IconArrow} from '../../images/icon-arrow-down.svg';
+import {FaChevronUp, FaChevronDown} from 'react-icons/fa';
+import { useState } from 'react';
 
 const PerguntasERespostas = ({pergunta, resposta}) => {
     
-    const abreResposta = () => {
-        console.log('cliquei')
-    }
+    const [abreResposta, setAbreResposta] = useState(false)
     
-    
+
     return(
         <div className='perguntas-respostas'>
-            <div onClick={abreResposta} className='pergunta-imagem'>
+            <div onClick={() => setAbreResposta(!abreResposta)} className='pergunta-imagem'>
                 <p className='perguntas'>{pergunta}</p>
-                <IconArrow />
+                {abreResposta ? <FaChevronUp/> : <FaChevronDown />}
             </div>
-            <p className='respostas' hidden>{resposta}</p>
+            
+            {abreResposta && <p className='respostas'>{resposta}</p>} 
         </div>
     )
 }
