@@ -7,7 +7,7 @@ const ContainerPerguntas = () => {
             <h1>Perguntas Frequentes</h1>
             <PerguntasERespostas
             pergunta = 'Quantos membros da equipe eu posso convidar?'
-            resposta = 'São permitidos 10 membros por equipe.'
+            resposta = 'Você pode convidar até 2 usuários adicionais no plano Gratuito. Não há limite de membros da equipe para o plano Premium.'
             />
             
             <PerguntasERespostas
@@ -17,17 +17,17 @@ const ContainerPerguntas = () => {
 
             <PerguntasERespostas
             pergunta = 'Como eu troco de senha?'
-            resposta = 'Siga o caminho a seguir: "perfil - configurações - trocar senha".'
+            resposta = 'Clique em “Esqueci a senha” na página de login ou em “Alterar senha” na página do seu perfil. Um link de redefinição será enviado para você.'
             />
 
             <PerguntasERespostas
             pergunta = 'Como cancelar a inscrição?'
-            resposta = 'Siga o caminho a seguir: "perfil - configurações - cancelar inscrição".'
+            resposta = 'Sim! Envie-nos uma mensagem e processaremos sua solicitação sem perguntas.'
             />
 
             <PerguntasERespostas
             pergunta = 'Vocês fornecem suporte adicional?'
-            resposta = 'Oferecemos, porém é um serviço cobrado a parte. Na seção "planos" você pode achar mais informações.'
+            resposta = 'O suporte por chat e e-mail está disponível 24 horas por dia, 7 dias por semana. As linhas telefônicas estão abertas durante o horário comercial normal.'
             />
 
         </div>
