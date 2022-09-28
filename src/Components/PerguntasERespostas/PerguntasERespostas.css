@@ -24,7 +24,8 @@
 .respostas{
     font-size: 12px;
     color: hsl(240, 6%, 50%);
-    margin: 5px 0px;
+    margin: 0px 0px 10px 0px;
+    line-height: 1.5em;
 }
 
 .perguntas-respostas{
@@ -36,4 +37,15 @@
 
 .icone{
     color: var(--soft-red);
+}
+
+@media screen and (max-width: 480px){
+    .pergunta-imagem{
+        display: grid;
+        grid-template-columns: 85% 15%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        cursor: pointer;
+    }
 }

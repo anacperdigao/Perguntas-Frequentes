@@ -30,4 +30,15 @@
   width: 90%;
 }
 
+@media screen and (max-width: 480px){
+  
+  .App{
+    grid-template-rows: 50% 50%;
+    grid-template-columns: none;
+    width: 270px;
+    padding: 0px 10px 60px 10px;
+  }
+  
+}
+
 
