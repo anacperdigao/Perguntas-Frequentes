@@ -8,12 +8,25 @@
   background-color: white;
   border-radius: 20px;
   padding: 20px 10px;
+}
 
+.container__imagens{
+  position: relative;
+}
+
+.imagem-sobreposicao{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .imagem-principal{
-  background-image: url('./images/bg-pattern-desktop.svg');
-  background-repeat: no-repeat;
+  width: 90%;
+}
+
+.imagem-background{
   width: 90%;
 }
 
