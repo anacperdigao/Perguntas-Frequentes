@@ -1,12 +1,14 @@
 import './App.css';
 import ContainerPerguntas from './Components/ContainerPerguntas';
-import {ReactComponent as WomanOnline} from './images/illustration-woman-online-desktop.svg';
+//import {ReactComponent as WomanOnline} from './images/illustration-woman-online-desktop.svg';
+import womanOnline from './images/illustration-woman-online-desktop.svg';
+
 
 function App() {
   return (
     <div className="App">
         <div className='container__imagens'>
-          <WomanOnline className='imagem-principal' />
+          <img src={womanOnline} alt='Mulher no computador' className='imagem-principal' />
         </div>
         <ContainerPerguntas />
     </div>

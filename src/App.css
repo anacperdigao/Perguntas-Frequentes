@@ -7,9 +7,14 @@
   height: 70%;
   background-color: white;
   border-radius: 20px;
-  padding: 10px 10px;
+  padding: 20px 10px;
+
 }
 
-
+.imagem-principal{
+  background-image: url('./images/bg-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  width: 90%;
+}
 
 
