@@ -1,8 +1,9 @@
+import React from 'react';
 import './App.css';
 import ContainerPerguntas from './Components/ContainerPerguntas';
 //import {ReactComponent as WomanOnline} from './images/illustration-woman-online-desktop.svg';
-import womanOnline from './images/illustration-woman-online-desktop.svg';
-import background from './images/bg-pattern-desktop.svg';
+import womanOnline from './assets/images/illustration-woman-online-desktop.svg';
+import background from './assets/images/bg-pattern-desktop.svg';
 
 
 function App() {

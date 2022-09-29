@@ -1,3 +1,4 @@
+import React from 'react';
 import './PerguntasERespostas.css';
 import {FaChevronUp, FaChevronDown} from 'react-icons/fa';
 import { useState } from 'react';
@@ -8,7 +9,7 @@ const PerguntasERespostas = ({pergunta, resposta}) => {
 
     return(
         <div className='perguntas-respostas'>
-            <div onClick={() => setAbreResposta(!abreResposta)} className='pergunta-imagem'>
+            <div className='pergunta-imagem' onClick={() => setAbreResposta(!abreResposta)}>
                 <p className={`${abreResposta ? "clicked perguntas" : "perguntas"}`}>{pergunta}</p>
                 {abreResposta ? <FaChevronUp className='icone' /> : <FaChevronDown className='icone' />}
             </div>
