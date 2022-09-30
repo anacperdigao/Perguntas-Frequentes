@@ -1,7 +1,5 @@
 import React from 'react';
-import './App.css';
-import ContainerPerguntas from './Components/ContainerPerguntas';
-import ContainerImagens from './Components/ContainerImagens';
+import ContainerGeral from './Components/ContainerGeral';
 import {GlobalStyle} from './Components/GlobalStyle'
 
 
@@ -9,12 +7,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div className='pagina__principal'>  
-        <div className="container__principal">
-            <ContainerImagens />
-            <ContainerPerguntas />
-        </div>
-      </div>
+      <ContainerGeral />
     </>
   );
 }
