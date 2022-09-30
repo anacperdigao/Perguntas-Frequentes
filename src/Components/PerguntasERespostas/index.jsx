@@ -1,21 +1,23 @@
 import React from 'react';
-import './PerguntasERespostas.css';
-import {FaChevronUp, FaChevronDown} from 'react-icons/fa';
 import { useState } from 'react';
+import * as S from './style'
+
 
 const PerguntasERespostas = ({pergunta, resposta}) => {
     
     const [abreResposta, setAbreResposta] = useState(false)
 
     return(
-        <div className='perguntas-respostas'>
-            <div className='pergunta-imagem' onClick={() => setAbreResposta(!abreResposta)}>
-                <p className={`${abreResposta ? "clicked perguntas" : "perguntas"}`}>{pergunta}</p>
-                {abreResposta ? <FaChevronUp className='icone' /> : <FaChevronDown className='icone' />}
-            </div>
+        <S.PerguntasRespostas>
+            <S.PerguntaImagem onClick={() => setAbreResposta(!abreResposta)}>
+                {abreResposta 
+                ? <S.PerguntasClicked>{pergunta}</S.PerguntasClicked> 
+                : <S.Perguntas>{pergunta}</S.Perguntas>}
+                {abreResposta ? <S.FaChevronUpIcon /> : <S.FaChevronDownIcon />}
+            </S.PerguntaImagem>
             
-            {abreResposta && <p className='respostas'>{resposta}</p>} 
-        </div>
+            {abreResposta && <S.Respostas>{resposta}</S.Respostas>} 
+        </S.PerguntasRespostas>
     )
 }
 
