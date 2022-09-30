@@ -1,25 +1,21 @@
 import React from 'react';
 import './App.css';
 import ContainerPerguntas from './Components/ContainerPerguntas';
-//import {ReactComponent as WomanOnline} from './images/illustration-woman-online-desktop.svg';
-import womanOnline from './assets/images/illustration-woman-online-desktop.svg';
-import background from './assets/images/bg-pattern-desktop.svg';
+import ContainerImagens from './Components/ContainerImagens';
+import {GlobalStyle} from './Components/GlobalStyle'
 
 
 function App() {
   return (
-    <div className="App">
-        
-        <div className='container__imagens'>
-          <img src={background} alt='Background com listras' className='imagem-background' />
-          <div className='imagem-sobreposicao'>  
-            <img src={womanOnline} alt='Mulher no computador' className='imagem-principal' />
-          </div>
+    <>
+      <GlobalStyle />
+      <div className='pagina__principal'>  
+        <div className="container__principal">
+            <ContainerImagens />
+            <ContainerPerguntas />
         </div>
-        
-        <ContainerPerguntas />
-        
-    </div>
+      </div>
+    </>
   );
 }
 

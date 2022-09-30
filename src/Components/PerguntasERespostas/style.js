@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import {FaChevronUp, FaChevronDown} from 'react-icons/fa';
+import {lightGrayishBlue, darkGrayishBlue, softRed, veryDarkDesaturatedBlue} from "../UI/variaveis"
 
 
 export const PerguntasRespostas = styled.div`
-    border-bottom: 1px solid hsl(240, 5%, 91%);
+    border-bottom: 1px solid ${lightGrayishBlue};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,36 +30,29 @@ export const PerguntaImagem = styled.div`
 
 export const Respostas = styled.p`
     font-size: 12px;
-    color: hsl(240, 6%, 50%);
+    color: ${darkGrayishBlue};
     margin: 0px 0px 10px 0px;
     line-height: 1.5em;
 `
 
 export const FaChevronUpIcon = styled(FaChevronUp)`
-    color: var(--soft-red);
+    color: ${softRed};
 `
 
 export const FaChevronDownIcon = styled(FaChevronDown)`
-    color: var(--soft-red);
+    color: ${softRed};
 `
 
 export const Perguntas = styled.p`
     margin: 10px 0px 10px 0px;
-    color: hsl(238, 29%, 16%);
+    color: ${veryDarkDesaturatedBlue};
     font-size: 14px;
     
     :hover{
-        color: hsl(14, 88%, 65%); 
+        color: ${softRed}; 
     }
 `
 
-export const PerguntasClicked = styled.p`
-    margin: 10px 0px 10px 0px;
-    color: hsl(238, 29%, 16%);
-    font-size: 14px;
+export const PerguntasClicked = styled(Perguntas)`
     font-weight: 600;
-    
-    :hover{
-        color: hsl(14, 88%, 65%); 
-    }
 `

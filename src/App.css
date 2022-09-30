@@ -1,4 +1,15 @@
-.App {
+.pagina__principal{
+  padding: 0px 0px;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__principal {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
@@ -10,29 +21,9 @@
   padding: 20px 10px;
 }
 
-.container__imagens{
-  position: relative;
-}
-
-.imagem-sobreposicao{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.imagem-principal{
-  width: 90%;
-}
-
-.imagem-background{
-  width: 90%;
-}
-
 @media screen and (max-width: 480px){
   
-  .App{
+  .container__principal{
     grid-template-rows: 50% 50%;
     grid-template-columns: none;
     width: 270px;
